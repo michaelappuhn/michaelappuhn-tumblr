@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!-- @include partials/title.tumblr -->
+
+	<!-- @include partials/meta-open-graph.tumblr -->
+
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+	<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=750">
+
+	<!-- @include partials/meta-open-graph.tumblr -->
+	<!-- @include partials/meta-customizer.tumblr -->
+
+	{block:HasTags}
+	<meta name="keywords" content="{block:Tags} {/block:Tags}"/>
+	{/block:HasTags}
+
+	<style>
+		<!-- @include ../../build/theme.css -->
+	</style>
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+</head>
+<body>
+	<div class="mdl-layout mdl-layout--fixed-drawer
+		 mdl-layout--overlay-drawer-button">
+		<div class="mdl-layout__drawer">
+			<a href="{BlogURL}" title="{Title}"><img src="{PortraitURL-128}" class="profile-picture profile-picture-128" alt="{Title}"></a>
+			<div class="description">{Description}</div>
+			<!-- @include partials/nav.tumblr -->
+			<!--<iframe width="300" height="350" id="prettycloud" class="tagcloud" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" src="http://post-theory.com/pretty-cloud/frame/gaming-thrones/jro9yn" ></iframe>-->
+		</div>
+		<main class="mdl-layout__content">
+			<div class="header">
+				<div class="logo">
+					<a href="http://{name}.tumblr.com/"><img src="http://static.tumblr.com/652e5f19256b84b73d7c106ba9098a05/rh4dbbq/vzJnrbq6y/tumblr_static_3ahlyjp0zu04sowg8k8c4scc8.jpg"/></a>
+				</div>
+			</div>
+
+			<div class="content-wrapper">
+				<div class="content" id="content">
+
+					<div class="posts">
+						{block:NoSearchResults}
+						<!-- @include partials/post-header.tumblr -->
+							<div class="mdl-card__supporting-text no-search-results">
+								No search results were found.
+							</div>
+						<!-- @include partials/post-footer.tumblr -->
+						{/block:NoSearchResults}
+						{block:Posts}
+							<!-- @include partials/post-header.tumblr -->
+
+							<div class="mdl-card__supporting-text">
+								<!-- Begin post types -->
+								<!-- @include partials/block-answer.tumblr -->
+								<!-- @include partials/block-audio.tumblr -->
+								<!-- @include partials/block-chat.tumblr -->
+								<!-- @include partials/block-link.tumblr -->
+								<!-- @include partials/block-panorama.tumblr -->
+								<!-- @include partials/block-photo.tumblr -->
+								<!-- @include partials/block-photoset.tumblr -->
+								<!-- @include partials/block-quote.tumblr -->
+								<!-- @include partials/block-text.tumblr -->
+								<!-- @include partials/block-video.tumblr -->
+								<!-- End post types -->
+							</div>
+
+							<!-- @include partials/post-footer.tumblr -->
+						{/block:Posts}
+						{block:IndexPage}
+						<div class="pagination mdl-shadow--2dp {block:NoSearchResults}hidden{/block:NoSearchResults}">
+							<div class="previous-page">
+								<a href="{block:PreviousPage}{PreviousPage}{/block:PreviousPage}" class="{block:PreviousPage}enabled{/block:PreviousPage}">&#171; Newer</a>
+							</div>
+							<div class="current-page">
+								Page {CurrentPage} of {TotalPages}
+							</div>
+							<div class="next-page">
+								<a href="{block:NextPage}{NextPage}{/block:NextPage}" class="{block:NextPage}enabled{/block:NextPage}">Older &#187;</a>
+							</div>
+						</div>
+						{/block:IndexPage}
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script>
+		<!-- @include ../../build/theme.js -->
+	</script>
+
+</body>
+</html>

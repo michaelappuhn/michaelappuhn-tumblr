@@ -1,0 +1,8 @@
+{block:SearchPage}
+	<div class="search-page">
+		<div class="search-results-count">
+			{lang:Found SearchResultCount results for SearchQuery}
+		</div>
+	</div>
+{/block:SearchPage}
+

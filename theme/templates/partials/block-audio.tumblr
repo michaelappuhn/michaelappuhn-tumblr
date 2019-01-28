@@ -1,0 +1,4 @@
+{block:Audio}
+		{AudioEmbed}
+		<!-- @include block-caption.tumblr -->
+{/block:Audio}

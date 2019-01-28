@@ -1,0 +1,39 @@
+.post {
+  padding: 2em 1em 0.5em;
+  position: relative;
+
+  h2.mdl-card__title-text a {
+    font-size: 24pt;
+  }
+
+  p > img {
+    width: 100%;
+  }
+
+  a.tumblr_blog {
+    font-size: 20pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: -35px;
+    display: inline-block;
+
+  }
+}
+
+.mdl-card__supporting-text {
+  img {
+    width: 80%;
+  }
+  .caption {
+    img {
+      width: auto;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media (max-width: $grid-tablet-breakpoint) {
+e .post {
+    padding: 0;
+  }
+}

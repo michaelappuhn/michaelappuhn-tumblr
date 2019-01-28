@@ -1,0 +1,51 @@
+{block:Answer}
+		<!--<img src="{AskerPortraitURL-64}" class="avatar"> {Asker} says:-->
+	<div class="answer__block">
+		<img class="answer__avatar" src="{AskerPortraitURL-64}">
+		<div class="answer__person">
+			{Asker} wrote:
+		</div>
+		<div class="answer__body">
+			{Question}
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	{block:Answerer}
+		<div class="answer__block">
+			<img class="answer__avatar" src="{AnswererPortraitURL-64}">
+			<div class="answer__person">
+				{Answerer} answered:
+			</div>
+			<div class="answer__body">
+				{Answer}
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	{/block:Answerer}
+	<div class="replies">
+		{Replies}
+	</div>
+{/block:Answer}
+
+<!--
+      {block:Answer}
+        <section class="question">
+          <img src="{AskerPortraitURL-48}">
+          <div class="asker">{lang:Asker asked}:</div>
+          <div class="asker-question">
+            {Question}
+          </div>
+        </section>
+        {block:Answerer}
+          <section class="answerer">
+            <img src="{AnswererPortraitURL-48}">
+            <p>{lang:Answer} {Answerer}:</p>
+            <div class="answerer-answer">
+              {Answer}
+            </div>
+          </section>
+        {/block:Answerer}
+        <div class="replies">{Replies}</div>
+      {/block:Answer}
+-->
+

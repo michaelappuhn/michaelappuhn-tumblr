@@ -1,0 +1,22 @@
+$color-primary: #000;
+$color-secondary: #3f3f3f;
+$text-link-color: blue;
+$text-color-primary: #000000;
+$custom-font-size-base: 15px;
+
+$layout-drawer-bg-color: rgba($color-primary,0.75);
+$layout-drawer-border-color: rgba($color-primary,0.75);
+$layout-drawer-width: 100%;
+$layout-text-color: rgba($color-primary,1);
+$layout-drawer-navigation-color: $text-link-color;
+$layout-drawer-navigation-link-active-background: $text-link-color;
+$layout-drawer-navigation-link-active-color: $text-link-color;
+
+$card-background-color: rgba($color-primary, 0.75);
+$card-supporting-text-text-color: $text-color-primary;
+$card-width: 80%;
+
+$ripple-bg-color: #ffffff;
+
+
+$grid-tablet-breakpoint: 720px;

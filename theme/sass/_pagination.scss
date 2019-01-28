@@ -1,0 +1,29 @@
+.pagination {
+  background-color: rgba(255,255,255,0.8);
+  display: flex;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.next-page {
+  text-align: left;
+  flex: 1;
+
+  a {
+    @include enableable();
+  }
+}
+
+.previous-page {
+  text-align: right;
+  flex: 1;
+
+  a {
+    @include enableable();
+  }
+}
+
+.current-page {
+  text-align: center;
+  flex: 1;
+}

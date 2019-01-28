@@ -1,0 +1,37 @@
+.mdl-navigation {
+  padding-top: 5px;
+}
+
+.mdl-navigation__link.mdl-js-ripple-effect {
+  position: relative;
+}
+
+.mdl-navigation {
+  li {
+    list-style: none;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  font-size: $custom-font-size-base;
+  padding: 5px 40px;
+
+  &.search-link {
+    padding-right: 20px;
+  }
+}
+
+.search-link {
+  float: left;
+  width: 75px;
+}
+
+.search-box {
+  padding: 7px 10px;
+  width: 250px;
+}

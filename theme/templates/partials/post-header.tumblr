@@ -1,0 +1,31 @@
+<div class="post
+{block:Answer}answer{/block:Answer}
+{block:Audio}audio{/block:Audio}
+{block:Chat}chat{/block:Chat}
+{block:Link}link{/block:Link}
+{block:Panorama}panorama{/block:Panorama}
+{block:Photo}photo{/block:Photo}
+{block:Photoset}photoset{/block:Photoset}
+{block:Quote}quote{/block:Quote}
+{block:RebloggedFrom}reblog{/block:Rebloggedfrom}
+{block:Search}search{/block:Search}
+{block:Text}text{/block:Text}
+{block:Video}video{/block:Video}
+">
+	<img class="profile-picture profile-picture-64" src="{PortraitUrl-64}">
+	<div class="mdl-card mdl-shadow--2dp demo-card-wide">
+		{block:Date}
+			<div class="date-posted mdl-button mdl-js-button">
+				<a href="{Permalink}">{lang:Posted on Month DayOfMonth Year}</a>
+			</div>
+		{/block:Date}
+
+		{block:Title}
+		<div class="mdl-card__title">
+			<h2 class="mdl-card__title-text">
+				<a href="{Permalink}">
+					{Title}
+				</a>
+			</h2>
+		</div>
+		{/block:Title}

@@ -1,0 +1,6 @@
+{block:Panorama}
+	{LinkOpenTag}
+		<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+	{LinkCloseTag}
+	<!-- @include post-caption.tumblr -->
+{/block:Panorama}

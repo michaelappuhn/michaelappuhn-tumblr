@@ -1,0 +1,47 @@
+
+
+		<div class="mdl-card__actions mdl-card--border">
+			{block:Date}
+				<div class="post-meta">
+					{block:RebloggedFrom}
+					<div class="meta-reblog">
+						Reblogged from <a href="{ReblogParentURL}"><img src="{ReblogParentPortraitURL-16}" class="avatar"> {ReblogParentName}</a>
+					</div>
+					{/block:RebloggedFrom}
+
+
+					<div class="meta-buttons">
+						<div class="note-count mdl-button mdl-js-button">
+							{block:NoteCount}
+							<a href="{Permalink}">{NoteCountWithLabel}</a>
+							{/block:NoteCount}
+						</div>
+						<div class="mdl-button mdl-button--raised mdl-button--icon mdl-js-button">
+							{ReblogButton color="black"}
+						</div>
+						<div class="mdl-button mdl-button--raised mdl-button--icon mdl-js-button">
+							{LikeButton color="black"}
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+					{block:HasTags}
+						{lang:Tagged}
+						<ul class="tags">
+							{block:Tags}
+							<li class="tag">
+								<a href="{tagurl}">#{Tag}</a>
+							</li>
+							{/block:Tags}
+						</ul>
+					{/block:HasTags}
+
+					{block:PermalinkPage}
+						{PostNotes}
+					{/block:PermalinkPage}
+				</div>
+			{/block:Date}
+		</div>
+	</div>
+</div>

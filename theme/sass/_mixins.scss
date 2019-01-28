@@ -1,0 +1,8 @@
+@mixin enableable() {
+  color: black;
+
+  &.enabled {
+    color: $text-link-color;
+    cursor: pointer;
+  }
+}

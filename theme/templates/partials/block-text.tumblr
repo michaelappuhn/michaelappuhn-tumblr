@@ -1,0 +1,25 @@
+{block:Text}
+	<div class="body">
+		{Body}
+	</div>
+
+	{block:More}
+		<div class="readmore">
+			<a href="{permalink}">
+				{lang:Read more} >>
+			</a>
+		</div>
+	{/block:More}
+{/block:Text}
+
+<!--
+      {block:Text}
+        {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+        {block:Body}
+        <div class="body-text">
+          {Body}
+        </div>
+        {/block:Body}
+      {/block:Text}
+
+-->
