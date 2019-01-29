@@ -3,7 +3,7 @@
 Tumblr template using SASS, Compass, Gulp, and Bower.
 
 ## Hi.
-I'm taking a weird-looking Game of Thrones themed theme (with an extremely nice production pipeline), merging it with a much nicer starter theme. 
+I'm taking a too-themed-for-what-i-need theme (with an extremely nice production pipeline), merging it with a starter theme. 
 
 I'll try to save that as a branch, if I remember, for someone else to use, since this is kind of a pain in the ass.
 
