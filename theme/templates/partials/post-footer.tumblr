@@ -1,6 +1,6 @@
 
 
-		<div class="mdl-card__actions mdl-card--border">
+		<div class="post__footer">
 			{block:Date}
 				<div class="post-meta">
 					{block:RebloggedFrom}

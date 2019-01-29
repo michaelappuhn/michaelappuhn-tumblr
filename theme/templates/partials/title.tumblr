@@ -4,3 +4,8 @@
 	{block:PostSummary}{PostSummary} | {/block:PostSummary}
 	{Title}
 </title>
+
+
+<!--
+  <title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
+-->

@@ -4,3 +4,15 @@
 	{LinkCloseTag}
 	<!-- @include post-caption.tumblr -->
 {/block:Panorama}
+
+<!--
+      {block:Panorama}
+        <figure{block:Caption} class="with-caption"{/block:Caption}>
+          {LinkOpenTag}<img src="{PhotoURL-Panorama}" width="{PhotoWidth-Panorama}" height="{PhotoHeight-Panorama}" alt="{PhotoAlt}">{LinkCloseTag}
+          {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
+        </figure>
+      {/block:Panorama}
+
+
+-->
+

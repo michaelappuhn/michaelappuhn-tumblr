@@ -1,3 +1,12 @@
+    <nav role="navigation">
+      <ul>
+        {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+        <li><a href="/archive">{lang:Archive}</a></li>
+        {block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
+      </ul>
+    </nav>
+
+<!--
 <nav class="mdl-navigation">
 	<ul>
 		{block:AskEnabled}
@@ -28,3 +37,4 @@
 		</li>
 	</ul>
 </nav>
+-->
