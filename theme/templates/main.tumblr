@@ -4,27 +4,12 @@
 	<!-- @include partials/head.tumblr -->
 </head>
 
-<body>
+<body> 
 
-  <header role="banner" class="header"> 
-    {block:ShowTitle}<h1 id="logo"><a href="{BlogURL}">{Title}</a></h1>{/block:ShowTitle}
-    {block:ShowDescription}{block:Description}<div class="description">{Description}</div>{/block:Description}{/block:ShowDescription}
-	 <!--
-    {block:ShowHeaderImage}<img src="{HeaderImage}">{/block:ShowHeaderImage}
-    {block:ShowAvatar}<img src="{PortraitURL-128}">{/block:ShowAvatar}
-	 -->
+	<!-- @include partials/header.tumblr -->
 
-	<!-- @include partials/block-answer.tumblr -->
 
-    <form id="search" action="/search" method="get">
-      <input role="textbox" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
-      <input role="button" type="submit" value="{lang:Search}">
-    </form>
-
-  </header>
-
-  <main role="main" class="content">
-
+  <main role="main" class="content"> 
     {block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage}
     <article class="post {PostType} {TagsAsClasses}">
       {block:Date}
@@ -50,7 +35,6 @@
 		</div><!--.post__content-->
 
 		<!-- @include partials/post-footer.tumblr -->
-		<!-- @include partials/post-pagination.tumblr -->
 
 
     </article>
@@ -60,11 +44,15 @@
         <p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
     {/block:IndexPage}
 
-	<!-- @include partials/post-footer.tumblr -->
+	<!-- @include partials/post-pagination.tumblr -->
 
   </main>
   <footer class="footer">
     <p><small>{block:ShowTitle}{Title} {/block:ShowTitle}&copy; {CopyrightYears}</small></p>
   </footer>
+
+	<script>
+		<!-- @include ../../build/theme.js -->
+	</script>
 </body>
 </html>
