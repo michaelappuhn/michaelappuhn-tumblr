@@ -3,78 +3,36 @@
 \*------------------------------------*/
 
 body.single{ 
-	.categorySection{
-		margin-top: 60px;
-		width: 100%;
-		.category-blog
-		{
-			width: 100%;
-			.description 
-			{
-				width: 98%;
-				h3 
-				{
-					border-bottom: 8px solid #000;
-					width: 100%;
-					a
-					{
-						font-size: 60px;
-						text-transform: none;
-						letter-spacing: 0;
-						line-height: 65px;
-
-						&:link, &:visited{ color: $color-primary};
-						&:hover
-						{ 
-							color: $color-secondary;
-						};
-						&:active{ color: $color-secondary};
-					}
-				}
-
-				p{
-					color: #000;
-					margin-left: 188px;
-					font-size: 20px;
-					line-height: 23px;
-					margin-bottom: 20px;
-					max-width: 600px; 
-
-					em
-					{
-						text-decoration: underline;
-					}
-
-					strong
-					{
-						font-family: $sansBold;
-					}
-
-					&.date 
-					{
-						margin-left: 0px;
-						float: left;
-						color: $color-primary;
-						font-size: 10px;
-						text-transform: uppercase;
-						letter-spacing: 0.07em;
-						font-family: $sansBold;
-					}
-
-					a:link, a:visited{ color: $color-primary; }
-					a:hover, a:active {text-decoration: underline;}
-
-				}
-			}
-		}
-	}
+	width: 100%;
 }
 
 
 
 .post {
-  padding: 2em 1em 0.5em;
-  position: relative;
+	width: 100%;
+	padding: 2em 1em 0.5em;
+	position: relative;
+
+	h3 
+	{
+		border-bottom: 8px solid #000;
+		width: 100%;
+		a
+		{
+			font-size: 60px;
+			text-transform: none;
+			letter-spacing: 0;
+			line-height: 65px;
+
+			&:link, &:visited{ color: $color-primary};
+			&:hover
+			{ 
+				color: $color-secondary;
+			};
+			&:active{ color: $color-secondary};
+		}
+	}
+
 
   h2.mdl-card__title-text a {
     font-size: 24pt;
@@ -85,38 +43,35 @@ body.single{
   }
 
   p {
-    color: #000;
-    margin-left: 188px;
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 20px;
-    max-width: 600px; 
+		color: #000;
+		margin-left: 188px;
+		font-size: 20px;
+		line-height: 23px;
+		margin-bottom: 20px;
+		max-width: 600px; 
 
-	  em {
+		em {
 		 text-decoration: underline;
-	  }
+		}
 
-	  strong {
+		strong {
 		 font-family: $sansBold;
-	  }
+		}
 
-	  &.date {
-		 margin-left: 0px;
-		 float: left;
-		 color: $blue;
-		 font-size: 10px;
-		 text-transform: uppercase;
-		 letter-spacing: 0.07em;
-		 font-family: $sansBold;
-	  }
+		&.date 
+		{
+			margin-left: 0px;
+			float: left;
+			color: $color-primary;
+			font-size: 10px;
+			text-transform: uppercase;
+			letter-spacing: 0.07em;
+			font-family: $sansBold;
+		}
 
-	  a:link, a:visited { 
-		 color: $blue; 
-	  }
 
-	  a:hover, a:active {
-		 text-decoration: underline;
-	  }
+		a:link, a:visited{ color: $color-primary; } 
+		a:hover, a:active {text-decoration: underline;}
 
 	  a.tumblr_blog {
 		 font-size: 20pt;
