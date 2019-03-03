@@ -13,6 +13,7 @@
   <link rel="canonical" href="{block:IndexPage}{BlogURL}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}">
   <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
+
   {block:Hidden}
     <!--
 
@@ -22,13 +23,14 @@
      -->
   {/block:Hidden}
 
+  <!--
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous">
+-->
   <style>
     /* Tumblr Global Appearance */
-    body {background:{BackgroundColor};}
     h1 > a {color:{TitleColor};}
     a {color:{AccentColor}}
     {CustomCSS}
-	<!-- @include ../../build/theme.css -->
+	<!-- @include ../../../build/theme.css -->
   </style>
 

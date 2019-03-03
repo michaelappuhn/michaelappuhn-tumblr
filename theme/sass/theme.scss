@@ -6,8 +6,10 @@
 // Variables and mixins
 
 // Resets and dependencies
-
 @import "settings"; //overrides
+
+// Bulma
+@import "../../node_modules/bulma/bulma";
 
 // Components
 @import "mixins";

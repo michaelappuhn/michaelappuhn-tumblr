@@ -4,19 +4,10 @@
 	<!-- @include partials/head.tumblr -->
 </head>
 
-<body> 
-
-	<!-- @include partials/header.tumblr -->
-
+<body>
+		<!-- @include partials/header.tumblr -->
 
   <main role="main" class="content"> 
-    {block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage}
-    <article class="post {PostType} {TagsAsClasses}">
-      {block:Date}
-        {block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
-        {block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
-      {/block:Date}
-
 
     {block:Posts}
 		<div class="post__content">
@@ -34,6 +25,13 @@
 		<!-- End post types -->
 		</div><!--.post__content-->
 
+    {block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage}
+    <article class="post {PostType} {TagsAsClasses}">
+      {block:Date}
+        {block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
+        {block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
+      {/block:Date}
+
 		<!-- @include partials/post-footer.tumblr -->
 
 
@@ -46,10 +44,10 @@
 
 	<!-- @include partials/post-pagination.tumblr -->
 
-  </main>
-  <footer class="footer">
-    <p><small>{block:ShowTitle}{Title} {/block:ShowTitle}&copy; {CopyrightYears}</small></p>
-  </footer>
+	</main>
+	<footer class="footer">
+		<p><small>{block:ShowTitle}{Title} {/block:ShowTitle}&copy; {CopyrightYears}</small></p>
+	</footer>
 
 	<script>
 		<!-- @include ../../build/theme.js -->
