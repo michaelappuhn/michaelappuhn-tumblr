@@ -1,4 +1,4 @@
-    <nav role="navigation">
+    <nav role="navigation" class="navbar">
       <ul>
         {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages} 
         <li><a class="archive" href="/archive">{lang:Archive}</a></li>
