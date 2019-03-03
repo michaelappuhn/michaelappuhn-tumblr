@@ -1,0 +1,3 @@
+<header class="logo">
+    <a href="{BlogURL}">{Title}</a>
+</header>

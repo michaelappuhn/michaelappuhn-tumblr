@@ -1,6 +1,7 @@
+$blue: blue;
 $color-primary: #000;
 $color-secondary: #3f3f3f;
-$text-link-color: blue;
+$text-link-color: $blue;
 $text-color-primary: #000000;
 $custom-font-size-base: 15px;
 
@@ -20,3 +21,5 @@ $ripple-bg-color: #ffffff;
 
 
 $grid-tablet-breakpoint: 720px;
+
+$sansBold: Helvetica, Arial, sans-serf;
