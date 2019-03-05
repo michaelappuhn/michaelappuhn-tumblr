@@ -1,18 +1,39 @@
-body {
+@font-face {
+  font-family: 'NeuzeitBook';
+  src: url("https://github.com/michaelappuhn/michaelappuhn.github.io/blob/master/theme/type/NeuzeitBook.otf?raw=true");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'NeuzeitBold';
+  src: url("https://github.com/michaelappuhn/michaelappuhn.github.io/blob/master/theme/type/NeuzeitHeavy.otf?raw=true");
+  font-weight: normal;
+  font-style: normal; }
 
-  .mdl-card__supporting-text {
-    img {
-      max-width:80%;
-      width:auto;
-    }
-  }
-  blockquote {
-    font-style: normal;
-  }
+
+body {
+  font-family: $sansBold;
+  background: $blue;
 }
 
 .clearfix {
   clear: both;
+}
+
+img, embed, iframe, object, video{
+    /* bulma override that I may understand the reason for layer*/
+    /* height was "auto" */
+    height: 100%;
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{}
+
+h1{
+ font-size: 3.5rem;  
+}
+
+h2{
+  font-size: 2.75rem;
 }
 
 a, a:active, a:visited {
@@ -37,6 +58,7 @@ p {
   margin-bottom: 1.25rem;
   margin-top: 0;
   font-size: $custom-font-size-base;
+  color: $text-color-primary;
 }
 
 blockquote {
@@ -55,4 +77,19 @@ blockquote {
 
 li {
   text-align: left;
+}
+
+figcaption{
+  font-style: normal;
+}
+
+.content figure figcaption{
+  /* override bulma default*/
+  font-style: normal;
+    text-align: left;
+}
+
+
+.content__wrapper{
+  
 }
