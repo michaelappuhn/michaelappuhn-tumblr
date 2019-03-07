@@ -8,3 +8,5 @@ theme.css
 theme.tumblr
 .idea
 *.swp
+.DS_Store
+
