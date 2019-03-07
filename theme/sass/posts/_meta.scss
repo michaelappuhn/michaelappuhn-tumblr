@@ -41,13 +41,15 @@
   display: inline;
 
   .tag {
+    background: $color-secondary;
     display: inline-block;
     margin-right: 1.2em;
     a {
       display: inline;
-      color: $color-secondary;
+      color: darken($color-primary, 10%);
       &:hover {
-        color: lighten($color-secondary, 25%);
+        background-color: darkent($color-primary, 20%);
+        color: $text-color-primary;
       }
     }
   }

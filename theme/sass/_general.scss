@@ -93,3 +93,11 @@ figcaption{
 .content__wrapper{
   
 }
+
+
+
+::selection {
+  background:$color-secondary;
+  color:#FFF;
+  text-shadow:none;
+}
