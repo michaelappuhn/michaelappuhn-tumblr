@@ -1,9 +1,13 @@
-$blue: blue;
-$color-primary: #000;
-$color-secondary: #3f3f3f;
-$text-link-color: $blue;
-$text-color-primary: #000000;
-$custom-font-size-base: 15px;
+
+
+$red: #EF2020;
+$blue: #3A32DE;
+
+$color-primary: $blue;
+$color-secondary: $red;
+$text-link-color: $red;
+$text-color-primary: #ffffff;
+$custom-font-size-base: 14px;
 
 $layout-drawer-bg-color: rgba($color-primary,0.75);
 $layout-drawer-border-color: rgba($color-primary,0.75);

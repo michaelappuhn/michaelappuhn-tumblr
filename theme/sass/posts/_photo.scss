@@ -1,10 +1,9 @@
-.photo {
-  padding: 0 5px;
-  margin: 5px 0;
-  box-sizing: border-box;
+.post--photo{}
 
-  .photo-wrapper {
-    display: block;
-  }
+.post--photo__image {
 }
 
+
+.photo__caption{
+	font-size: 1.5rem;
+}

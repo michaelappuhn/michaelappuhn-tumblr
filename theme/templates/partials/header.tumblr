@@ -1,7 +1,3 @@
-<div class = "columns">
-  <div class= "column">
     <header class="logo">
       <a href="{BlogURL}">{Title}</a>
     </header> 
-  </div><!-- .column -->
-</div><!-- .columns -->
