@@ -34,7 +34,11 @@
     "tumblrPhotoset.albumPhotoset.rollover": "./theme/libs/tumblr-photoset/tumblr-photoset.album-photoset.rollover.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "gulp watch",
+    "scripts": "gulp scripts",
+    "styles": "gulp styles",
+    "html": "gulp html",
+    "copy": "cat dist/theme.tumblr | pbcopy"
   },
   "repository": {
     "type": "git",
