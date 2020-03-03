@@ -53,11 +53,11 @@ function compileHtml()
     var returnObj = gulp.src('theme/templates/main.tumblr')
         .pipe(preprocess())
         .on('error', watchTask ) // restart watch task on error
-        .pipe(gulpif(!(argv['noclipboard']), clipboard()))
-        .pipe(rename('theme.tumblr'))
+        //.pipe(gulpif(!(argv['noclipboard']), clipboard()))
+        //.pipe(rename('theme.tumblr'))
         .pipe(gulp.dest('dist/'));
 
-    if (!(argv['noclipboard'])) console.log('Clipboard being prepared... wait for "Finished \'html\'"!');
+    //if (!(argv['noclipboard'])) console.log('Clipboard being prepared... wait for "Finished \'html\'"!');
     return returnObj;
 }
 

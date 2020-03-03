@@ -38,7 +38,7 @@
     "scripts": "gulp scripts",
     "styles": "gulp styles",
     "html": "gulp html",
-    "copy": "cat dist/theme.tumblr | pbcopy"
+    "copy": "cat dist/main.tumblr | pbcopy"
   },
   "repository": {
     "type": "git",
