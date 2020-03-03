@@ -1,5 +1,6 @@
 .pagination {
-  background-color: rgba(255,255,255,0.8);
+  background-color: $blue;
+  color: $red;
   display: flex;
   line-height: 2em;
   vertical-align: middle;
@@ -24,6 +25,7 @@
 }
 
 .current-page {
+  color: $white;
   text-align: center;
   flex: 1;
 }

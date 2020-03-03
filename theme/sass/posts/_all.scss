@@ -1,4 +1,22 @@
 .post{}
 
-.post__content{}
+.post__content{ 
+    margin-top: 1em; 
+}
 
+.meta-date p{
+    font-family: $sansBold;
+    font-size: .8rem;
+    text-transform: uppercase; 
+    letter-spacing: 0.05em;
+}
+
+
+figure {
+    text-align: left;
+}
+
+.caption p, .post__text p{
+    font-size: 1.2rem;
+    max-width: 600px;
+} 
