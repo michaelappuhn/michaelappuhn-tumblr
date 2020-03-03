@@ -1,0 +1,12 @@
+		{block:HasTags}
+				<div class="tags__group">
+					<ul class="tags">
+						{block:Tags}
+						<li class="tag">
+							<a href="{tagurl}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+				</div><!--.tags-->
+			{/block:HasTags}
+<!-- {block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage} -->

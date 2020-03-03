@@ -11,28 +11,33 @@
 
     {block:Posts}
 		<div class="post__content">
-		<!-- Begin post types -->
-			<!-- @include partials/block-answer.tumblr -->
-			<!-- @include partials/block-audio.tumblr -->
-			<!-- @include partials/block-chat.tumblr -->
-			<!-- @include partials/block-link.tumblr -->
-			<!-- @include partials/block-panorama.tumblr -->
-			<!-- @include partials/block-photo.tumblr -->
-			<!-- @include partials/block-photoset.tumblr -->
-			<!-- @include partials/block-quote.tumblr -->
-			<!-- @include partials/block-text.tumblr -->
-			<!-- @include partials/block-video.tumblr -->
-		<!-- End post types -->
-		</div><!--.post__content-->
+			<div class="columns">
 
-    {block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage}
+				<div class="column is-pulled-right">
+					<!-- Begin post types -->
+					<!-- @include partials/block-answer.tumblr -->
+					<!-- @include partials/block-audio.tumblr -->
+					<!-- @include partials/block-chat.tumblr -->
+					<!-- @include partials/block-link.tumblr -->
+					<!-- @include partials/block-panorama.tumblr -->
+					<!-- @include partials/block-photo.tumblr -->
+					<!-- @include partials/block-photoset.tumblr -->
+					<!-- @include partials/block-quote.tumblr -->
+					<!-- @include partials/block-text.tumblr -->
+					<!-- @include partials/block-video.tumblr -->
+					<!-- End post types -->
+				</div><!--.column-->
 
+		
+				<div class="column is-3-desktop is-pulled-left">
+					<!-- @include partials/block-date.tumblr --> 
+					<!-- @include partials/block-caption.tumblr --> 
+					<!-- @include partials/post-footer.tumblr -->
+				</div><!--.column--> 
 
+			</div><!--.columns--> 
+		</div><!--.post__content--> 
 
-		<!-- @include partials/post-footer.tumblr -->
-
-
-    </article>
     {/block:Posts}
 
 

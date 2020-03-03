@@ -1,14 +1,16 @@
 {block:Text}
-    {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
-	<div class="body body--text">
-		{Body}
-	</div>
-
-	{block:More}
-		<div class="readmore">
-			<a href="{permalink}">
-				{lang:Read more} >>
-			</a>
+	<div class="post__text">
+		{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+		<div class="body body--text">
+			{Body}
 		</div>
-	{/block:More}
+
+		{block:More}
+			<div class="readmore">
+				<a href="{permalink}">
+					{lang:Read more} >>
+				</a>
+			</div>
+		{/block:More}
+	</div><!--.post__text-->
 {/block:Text}

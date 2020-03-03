@@ -21,16 +21,23 @@
 -->
 
 {block:IndexPage}
-<div class="pagination mdl-shadow--2dp {block:NoSearchResults}hidden{/block:NoSearchResults}">
-	<div class="previous-page">
-		<a href="{block:PreviousPage}{PreviousPage}{/block:PreviousPage}" class="{block:PreviousPage}enabled{/block:PreviousPage}">&#171; Newer</a>
+<div class="columns">
+
+	<div class="column">
+		<div class="pagination mdl-shadow--2dp {block:NoSearchResults}hidden{/block:NoSearchResults}">
+			<div class="previous-page">
+				<a href="{block:PreviousPage}{PreviousPage}{/block:PreviousPage}" class="{block:PreviousPage}enabled{/block:PreviousPage}">&#8592; Newer</a>
+			</div>
+			<div class="current-page">
+				Page {CurrentPage} of {TotalPages}
+			</div>
+			<div class="next-page">
+				<a href="{block:NextPage}{NextPage}{/block:NextPage}" class="{block:NextPage}enabled{/block:NextPage}">Older &#8594;</a>
+			</div>
+		</div>
 	</div>
-	<div class="current-page">
-		Page {CurrentPage} of {TotalPages}
-	</div>
-	<div class="next-page">
-		<a href="{block:NextPage}{NextPage}{/block:NextPage}" class="{block:NextPage}enabled{/block:NextPage}">Older &#187;</a>
-	</div>
+
+	<div class="column is-3"></div>
+
 </div>
 {/block:IndexPage}
-

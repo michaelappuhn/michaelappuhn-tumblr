@@ -1,0 +1,11 @@
+<div class="permalink meta-date">
+        <p>
+            <a href="{Permalink}" class="permalink">
+                {block:Date}
+                    {block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
+                    {block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
+                {/block:Date}	
+            </a>
+        </p>
+</div><!--.permalink .meta-buttons -->
+
